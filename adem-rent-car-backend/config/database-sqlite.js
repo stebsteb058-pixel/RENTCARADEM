@@ -108,21 +108,63 @@ db.run(`
         hashPassword('admin123', (err, hashedAdmin) => {
             if (!err) {
                 db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
-                    ['admin', hashedAdmin, 'admin', 'Administrateur']);
+                    ['admin', hashedAdmin, 'admin', 'Adem Rent Car']);
             }
         });
         
-        hashPassword('sous123', (err, hashedSous1) => {
+        hashPassword('sous1', (err, hashedSous1) => {
             if (!err) {
                 db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
-                    ['sous1', hashedSous1, 'sous_traitant', 'Adem Rent Car']);
+                    ['marii', hashedSous1, 'sous_traitant', 'Marii']);
             }
         });
         
-        hashPassword('sous456', (err, hashedSous2) => {
+        hashPassword('sous2', (err, hashedSous2) => {
             if (!err) {
                 db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
-                    ['sous2', hashedSous2, 'sous_traitant', 'Location Express']);
+                    ['jamel', hashedSous2, 'sous_traitant', 'Jamel']);
+            }
+        });
+                hashPassword('sous3', (err, hashedSous3) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['chokri', hashedSous3, 'sous_traitant', 'chokri']);
+            }
+        });
+                hashPassword('sous4', (err, hashedSous4) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['tmim', hashedSous4, 'sous_traitant', 'tmim']);
+            }
+        });
+                hashPassword('sous5', (err, hashedSous5) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['nader', hashedSous5, 'sous_traitant', 'nader']);
+            }
+        });
+                hashPassword('sous6', (err, hashedSous6) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['mouhamed', hashedSous6, 'sous_traitant', 'mouhamed']);
+            }
+        });
+                hashPassword('sous7', (err, hashedSous7) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['wajih', hashedSous7, 'sous_traitant', 'wajih']);
+            }
+        });
+                hashPassword('sous8', (err, hashedSous8) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['chrif', hashedSous8, 'sous_traitant', 'chrif']);
+            }
+        });
+                hashPassword('sous9', (err, hashedSous9) => {
+            if (!err) {
+                db.run(`INSERT OR IGNORE INTO users (username, password, role, company) VALUES (?, ?, ?, ?)`,
+                    ['saiid', hashedSous9, 'sous_traitant', 'saiid']);
             }
         });
     }, 500);
